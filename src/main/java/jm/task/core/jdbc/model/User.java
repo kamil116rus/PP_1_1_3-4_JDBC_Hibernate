@@ -3,6 +3,7 @@ package jm.task.core.jdbc.model;
 import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.sql.Array;
 
 @Table
 public class User {
@@ -58,5 +59,10 @@ public class User {
 
     public void setAge(Byte age) {
         this.age = age;
+    }
+
+    public String toString() {
+        return new String("Id - " + this.id + ", name - " + this.name + ", lastname- "
+        + this.lastName + ",  age - " + this.age);
     }
 }
