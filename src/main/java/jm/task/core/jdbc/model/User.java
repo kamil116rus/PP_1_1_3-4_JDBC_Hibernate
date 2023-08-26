@@ -15,7 +15,7 @@ public class User {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "last_name")
+    @Column(name = "lastname")
     private String lastName;
 
     @Column(name = "age")
@@ -65,6 +65,6 @@ public class User {
 
     public String toString() {
         return "User [Id - " + this.id + ", name - " + this.name + ", lastname- "
-        + this.lastName + ",  age - " + this.age + "]";
+                + this.lastName + ",  age - " + this.age + "]";
     }
 }

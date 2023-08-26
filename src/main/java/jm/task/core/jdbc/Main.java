@@ -21,8 +21,10 @@ public class Main {
         userService.saveUser("Akter", "Artisi", (byte) 18);
         System.out.println("User с именем – Akter добавлен в базу данных ");
 
+        userService.removeUserById(1);
+//
         userService.getAllUsers().stream().forEach(m -> System.out.println(m.toString()));
-
+////
         userService.cleanUsersTable();
         userService.dropUsersTable();
     }
